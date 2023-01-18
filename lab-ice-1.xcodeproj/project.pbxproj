@@ -19,6 +19,7 @@
 		19E6CFFE29786018009AB563 /* GameObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E6CFFD29786018009AB563 /* GameObject.swift */; };
 		19E6D000297861EB009AB563 /* GameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E6CFFF297861EB009AB563 /* GameProtocol.swift */; };
 		19E6D00329786601009AB563 /* Ocean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E6D00229786601009AB563 /* Ocean.swift */; };
+		19E6D00529786A1C009AB563 /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E6D00429786A1B009AB563 /* Plane.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		19E6CFFD29786018009AB563 /* GameObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameObject.swift; sourceTree = "<group>"; };
 		19E6CFFF297861EB009AB563 /* GameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameProtocol.swift; sourceTree = "<group>"; };
 		19E6D00229786601009AB563 /* Ocean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ocean.swift; sourceTree = "<group>"; };
+		19E6D00429786A1B009AB563 /* Plane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				19E6D00229786601009AB563 /* Ocean.swift */,
+				19E6D00429786A1B009AB563 /* Plane.swift */,
 			);
 			path = GameObjects;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 				19E6CFEC29785DE3009AB563 /* GameViewController.swift in Sources */,
 				19E6D00329786601009AB563 /* Ocean.swift in Sources */,
 				19E6CFE429785DE3009AB563 /* AppDelegate.swift in Sources */,
+				19E6D00529786A1C009AB563 /* Plane.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

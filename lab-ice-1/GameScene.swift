@@ -16,7 +16,9 @@ var screenHeight: CGFloat?
 
 class GameScene: SKScene {
     
-    var ocean : Ocean?
+    var ocean: Ocean?
+    var plane: Plane?
+    
     
     override func sceneDidLoad() {
 
@@ -25,21 +27,26 @@ class GameScene: SKScene {
         name = "GAME"
         
         ocean = Ocean()
-        ocean?.position = CGPoint(x: 0, y: 700)
+        ocean?.position = CGPoint(x: 0, y: 773)
         addChild(ocean!)
+        
+        plane = Plane()
+        plane?.position = CGPoint(x: 0, y: -495)
+        addChild(plane!)
     }
+    
     
     
     func touchDown(atPoint pos : CGPoint) {
-       
+        plane?.TouchMove(newPos: CGPoint(x: pos.x, y: -495))
     }
     
     func touchMoved(toPoint pos : CGPoint) {
-        
+        plane?.TouchMove(newPos: CGPoint(x: pos.x, y: -495))
     }
     
     func touchUp(atPoint pos : CGPoint) {
-        
+        plane?.TouchMove(newPos: CGPoint(x: pos.x, y: -495))
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -62,6 +69,7 @@ class GameScene: SKScene {
     override func update(_ currentTime: TimeInterval) {
         
         ocean?.Update()
+        plane?.Update()
         
     }
 }
