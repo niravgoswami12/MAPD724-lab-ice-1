@@ -15,6 +15,10 @@
 		19E6CFEF29785DE3009AB563 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19E6CFED29785DE3009AB563 /* Main.storyboard */; };
 		19E6CFF129785DE4009AB563 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19E6CFF029785DE4009AB563 /* Assets.xcassets */; };
 		19E6CFF429785DE4009AB563 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19E6CFF229785DE4009AB563 /* LaunchScreen.storyboard */; };
+		19E6CFFB29785F44009AB563 /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = 19E6CFFA29785F44009AB563 /* Assets */; };
+		19E6CFFE29786018009AB563 /* GameObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E6CFFD29786018009AB563 /* GameObject.swift */; };
+		19E6D000297861EB009AB563 /* GameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E6CFFF297861EB009AB563 /* GameProtocol.swift */; };
+		19E6D00329786601009AB563 /* Ocean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E6D00229786601009AB563 /* Ocean.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +31,10 @@
 		19E6CFEE29785DE3009AB563 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		19E6CFF029785DE4009AB563 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19E6CFF329785DE4009AB563 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		19E6CFFA29785F44009AB563 /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = "<group>"; };
+		19E6CFFD29786018009AB563 /* GameObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameObject.swift; sourceTree = "<group>"; };
+		19E6CFFF297861EB009AB563 /* GameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameProtocol.swift; sourceTree = "<group>"; };
+		19E6D00229786601009AB563 /* Ocean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ocean.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,8 @@
 		19E6CFD729785DE3009AB563 = {
 			isa = PBXGroup;
 			children = (
+				19E6D001297865E8009AB563 /* GameObjects */,
+				19E6CFFC29785FF9009AB563 /* Core */,
 				19E6CFE229785DE3009AB563 /* lab-ice-1 */,
 				19E6CFE129785DE3009AB563 /* Products */,
 			);
@@ -67,8 +77,26 @@
 				19E6CFED29785DE3009AB563 /* Main.storyboard */,
 				19E6CFF029785DE4009AB563 /* Assets.xcassets */,
 				19E6CFF229785DE4009AB563 /* LaunchScreen.storyboard */,
+				19E6CFFA29785F44009AB563 /* Assets */,
 			);
 			path = "lab-ice-1";
+			sourceTree = "<group>";
+		};
+		19E6CFFC29785FF9009AB563 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				19E6CFFD29786018009AB563 /* GameObject.swift */,
+				19E6CFFF297861EB009AB563 /* GameProtocol.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		19E6D001297865E8009AB563 /* GameObjects */ = {
+			isa = PBXGroup;
+			children = (
+				19E6D00229786601009AB563 /* Ocean.swift */,
+			);
+			path = GameObjects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				19E6CFEF29785DE3009AB563 /* Main.storyboard in Resources */,
+				19E6CFFB29785F44009AB563 /* Assets in Resources */,
 				19E6CFE629785DE3009AB563 /* GameScene.sks in Resources */,
 				19E6CFF129785DE4009AB563 /* Assets.xcassets in Resources */,
 				19E6CFF429785DE4009AB563 /* LaunchScreen.storyboard in Resources */,
@@ -144,8 +173,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19E6CFFE29786018009AB563 /* GameObject.swift in Sources */,
+				19E6D000297861EB009AB563 /* GameProtocol.swift in Sources */,
 				19E6CFEA29785DE3009AB563 /* GameScene.swift in Sources */,
 				19E6CFEC29785DE3009AB563 /* GameViewController.swift in Sources */,
+				19E6D00329786601009AB563 /* Ocean.swift in Sources */,
 				19E6CFE429785DE3009AB563 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
